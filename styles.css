@@ -1,0 +1,23 @@
+
+
+
+table{
+    width: 500px;
+}
+th{
+    text-align: left;
+    background: rgb(77, 72, 72);
+}
+
+table, th, td{
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 4px;
+}
+
+tr:nth-child(even){
+    background: #ddd;
+}

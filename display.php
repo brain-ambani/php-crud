@@ -8,6 +8,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <button>Add user</button>
@@ -22,6 +23,20 @@
             </tr>
         </thead>
         <tbody>
+            <tr>
+                <td>1</td>
+                <td>Brian</td>
+                <td>brainambani1@gmail.com</td>
+                <td>074177848</td>
+                <td>1234</td>«
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Brian</td>
+                <td>brainambani1@gmail.com</td>
+                <td>074177848</td>
+                <td>1234</td>«
+            </tr>
             <tr>
                 <td>1</td>
                 <td>Brian</td>
