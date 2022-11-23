@@ -12,7 +12,7 @@ if(isset($_POST['submit'])){
 
     $result= mysqli_query($conn, $sql);
     if($result){
-        echo "data inserted succesully";
+        header("location:display.php");
     }
 }
 

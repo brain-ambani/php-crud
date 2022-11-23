@@ -11,41 +11,48 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <button>Add user</button>
-    <table>
-        <thead>
-            <tr>
-                <th>Srl No.</th>
-                <th>Name</th>
-                <th>Email</th>
-                <th>Mobile</th>
-                <th>Password</th>«
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>1</td>
-                <td>Brian</td>
-                <td>brainambani1@gmail.com</td>
-                <td>074177848</td>
-                <td>1234</td>«
-            </tr>
-            <tr>
-                <td>1</td>
-                <td>Brian</td>
-                <td>brainambani1@gmail.com</td>
-                <td>074177848</td>
-                <td>1234</td>«
-            </tr>
-            <tr>
-                <td>1</td>
-                <td>Brian</td>
-                <td>brainambani1@gmail.com</td>
-                <td>074177848</td>
-                <td>1234</td>«
-            </tr>
-        </tbody>
-    </table>
-    
+    <div>
+        <button>Add user</button>
+    </div>
+    <div>
+        <table>
+            <thead>
+                <tr>
+                    <th>Srl No.</th>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Mobile</th>
+                    <th>Password</th>«
+                </tr>
+            </thead>
+            <tbody>
+            <?php
+                $sql = "select * from `data`";
+                $result = mysqli_query($conn, $sql);
+
+                if($result){
+                    while($row=mysqli_fetch_assoc($result)){
+                        $id = $row['id'];
+                        $name = $row['name'];
+                        $email = $row['email'];
+                        $mobile = $row['mobile'];
+                        $password = $row['password'];
+
+                        echo '<tr>
+                        <td>'.$id.'</td>
+                        <td>'.$name.'</td>
+                        <td>'.$email.'</td>
+                        <td>'.$mobile.'</td>
+                        <td>'.$password.'</td>«
+                    </tr>
+                        ';
+                    }
+                }
+
+
+            ?>
+            </tbody>
+        </table>
+    </div>
 </body>
 </html>
