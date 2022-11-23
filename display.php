@@ -12,7 +12,7 @@
 </head>
 <body>
     <div>
-        <button>Add user</button>
+        <button class="btn btn-add" ><a href="index.php">Add user</a> </button>
     </div>
     <div>
         <table>
@@ -22,7 +22,8 @@
                     <th>Name</th>
                     <th>Email</th>
                     <th>Mobile</th>
-                    <th>Password</th>«
+                    <th>Password</th>
+                    <th>Operations</th>
                 </tr>
             </thead>
             <tbody>
@@ -43,7 +44,11 @@
                         <td>'.$name.'</td>
                         <td>'.$email.'</td>
                         <td>'.$mobile.'</td>
-                        <td>'.$password.'</td>«
+                        <td>'.$password.'</td>
+                        <td class="buttons">
+                            <button class="btn btn-primary">Update</botton>
+                            <button class="btn btn-danger">Delete</botton>
+                        </td>
                     </tr>
                         ';
                     }

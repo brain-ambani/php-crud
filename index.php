@@ -33,15 +33,15 @@ if(isset($_POST['submit'])){
     <form action="" method="POST">
         <div>
         <label for="">Name</label>
-        <input type="text" name="name" placeholder="Enter your name">
+        <input type="text" name="name" placeholder="Enter your name" autocomplete="off">
         </div>
         <div>
         <label for="">Email</label>
-        <input type="text" name="email" placeholder="Enter your email">
+        <input type="text" name="email" placeholder="Enter your email" autocomplete="off">
         </div>
         <div>
         <label for="">Mobile</label>
-        <input type="text" name="mobile" placeholder="Enter your mobile">
+        <input type="text" name="mobile" placeholder="Enter your mobile" autocomplete="off">
         </div><div>
         <label for="">Password</label>
         <input type="password" name="password" placeholder="Enter your password">
