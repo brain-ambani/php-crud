@@ -5,9 +5,13 @@
 }
 
 body{
-    background: #6939eb;
+    background: #1e4569;
     height: 100vh;
     width: 100%;
+    color: #eee;
+}
+label{
+    margin-right: 20px;
 }
 
 form{
@@ -17,6 +21,13 @@ form{
 input{
     padding: 8px;
     margin: 8px;
+    outline: none;
+    border: none;
+    background: transparent;
+}
+
+.btn-submit{
+    background: greenyellow;
 }
 
 table{
