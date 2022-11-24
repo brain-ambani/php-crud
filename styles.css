@@ -1,5 +1,23 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
+body{
+    background: #6939eb;
+    height: 100vh;
+    width: 100%;
+}
 
+form{
+    margin: 50px ;
+}
+
+input{
+    padding: 8px;
+    margin: 8px;
+}
 
 table{
     width: 600px;
